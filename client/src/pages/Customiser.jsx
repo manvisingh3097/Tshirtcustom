@@ -24,7 +24,9 @@ const Customiser = () => {
             {...slideAnimation('left')}
             >
                 <div className='flex items-center min-h-screen'>
+                    
                     <div className='editortabs-container tabs'>
+                    <p>tests</p>
                         {EditorTabs.map((tab)=> {
                             <Tab
                                 key = {Tab.name}
@@ -48,7 +50,7 @@ const Customiser = () => {
                 />
                 
             </motion.div>
-
+            
             <motion.div className='filtertabs-container'
             {...slideAnimation("up")}>
                 {FilterTabs.map((tab)=> {
